@@ -7,6 +7,7 @@
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	
+	
 	<name>maven-web-application</name>
 
 	<description>Maven Web Project for Java Project</description>
@@ -89,7 +90,12 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-		
+		<dependency>
+  <groupId>com.mt</groupId>
+  <artifactId>maven-web-application</artifactId>
+  <version>0.0.1-20260612.181730-2</version>
+  <type>war</type>
+</dependency>
 	</dependencies>
 	
 	<distributionManagement>

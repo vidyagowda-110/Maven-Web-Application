@@ -90,12 +90,7 @@
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-  <groupId>com.mt</groupId>
-  <artifactId>maven-web-application</artifactId>
-  <version>0.0.1-20260612.181730-2</version>
-  <type>war</type>
-</dependency>
+		
 	</dependencies>
 	
 	<distributionManagement>

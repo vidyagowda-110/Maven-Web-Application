@@ -34,6 +34,16 @@ pipeline
                 sh 'docker build -t vidyashreekgowda/homepage-service:${buildNumber} .'
             }
         }
+        stage('push docker image to dockerhub')
+        {
+            steps
+            {
+                withCredentials([string(credentialsId: 'docker_hub_pass', variable: 'docker_hub_pass')]) 
+                {
+                    sh 'docker login -u vidyashreekgowda -p ${docker_hub_pass}'
+                }
+            }
+        }
 
 
 

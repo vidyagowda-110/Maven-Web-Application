@@ -16,7 +16,9 @@ pipeline
         stage('git checkout')
         {
             steps
+            {
             git branch: 'DevOpsFebruary2026', url: 'https://github.com/vidyagowda-110/Maven-Web-Application.git'
+            }
         }
         stage('Build Project')
         {

@@ -46,6 +46,14 @@ pipeline
                 
             }
         }
+        stage('delete the image locally')
+        {
+            steps
+            {
+                sh 'docker rmi -f vidyashreekgowda/homepage-service:${buildNumber}'
+            }
+        }
+
 
 
 

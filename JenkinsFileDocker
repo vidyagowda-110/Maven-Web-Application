@@ -15,19 +15,19 @@ pipeline
     {
         stage('git checkout')
         {
-            steps()
+            steps
             git branch: 'DevOpsFebruary2026', url: 'https://github.com/vidyagowda-110/Maven-Web-Application.git'
         }
         stage('Build Project')
         {
-            steps()
+            steps
             {
                 sh 'mvn clean package'
             }
         }
         stage('Build Docker Image')
         {
-            steps()
+            steps
             {
                 sh 'docker build -t vidyashreekgowda/homepage-service:${buildNumber} .'
             }

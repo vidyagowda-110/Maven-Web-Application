@@ -42,6 +42,8 @@ pipeline
                 {
                     sh 'docker login -u vidyashreekgowda -p ${docker_hub_pass}'
                 }
+                sh 'docker push vidyashreekgowda/homepage-service:${buildNumber}'
+                
             }
         }
 

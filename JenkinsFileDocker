@@ -59,8 +59,8 @@ pipeline
             {
                 sshagent(credentials: ['deployment_id'])
                 {
-                   sh "ssh -o strictlyHostKeyChecking=no ubuntu@172.31.11.6 docker rm -f maven_container || true"
-                   sh "ssh -o strictlyHostKeyChecking=no ubuntu@172.31.11.6 docker run -d -name maven_container -p 8080:8080 vidyashreekgowda/homepage-service:${buildNumber}"
+                   sh "ssh -o StrictlyHostKeyChecking=no ubuntu@172.31.11.6 docker rm -f maven_container || true"
+                   sh "ssh -o StrictlyHostKeyChecking=no ubuntu@172.31.11.6 docker run -d -name maven_container -p 8080:8080 vidyashreekgowda/homepage-service:${buildNumber}"
                 }
             }
         }
